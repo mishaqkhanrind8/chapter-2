@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <style>h1,h2,h3{color: blue;
+    text-transform: capitalize;}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body>
+    <div class="container-fluid text-bg-secondary">
+<h1 class="text-center">clearfix</h1>
+
+<p>Quickly and easily clear floated content within a container by adding a clearfix utility.
+
+    Easily clear floats by adding .clearfix to the parent element. Can also be used as a mixin.</p>
+
+<!--clearfix example-->
+
+    <div class="clearfix">this is example of clearfix utility</div>
+
+<p>The following example shows how the clearfix can be used. Without the clearfix the wrapping div
+     would not span around the buttons which would cause a broken layout</p>
+   
+   <!--clearfix example 2-->
+ 
+   <div class="bg-info clearfix p-2">
+    <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+    <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
+  </div>
+<!--end exmaple code-->
+ 
+<h1 class="text-center">color and background</h1>
+
+<p>Color and background helpers combine the power of our .text-* utilities and .bg-* utilities in one class.
+ Using our Sass color-contrast() function, we automatically determine a contrasting color for a particular background-color.</p>
+
+<p class="col-md-8 mx-auto rounded text-bg-dark p-3"><strong> Heads up!</strong> There’s currently no support for a CSS-native color-contrast function,
+     so we use our own via Sass. This means that customizing our theme colors via CSS variables may cause color contrast
+      issues with these utilities.</p>
+
+      <!--exmaple of code-->
+<div class="row">
+      <div class="col-md-4">
+<div class="text-bg-primary p-3">Primary with contrasting color</div>
+<div class="text-bg-secondary p-3">Secondary with contrasting color</div>
+<div class="text-bg-success p-3">Success with contrasting color</div>
+<div class="text-bg-danger p-3">Danger with contrasting color</div>
+<div class="text-bg-warning p-3">Warning with contrasting color</div>
+<div class="text-bg-info p-3">Info with contrasting color</div>
+<div class="text-bg-light p-3">Light with contrasting color</div>
+<div class="text-bg-dark p-3">Dark with contrasting color</div>
+</div>
+<div class="col-md-7 mx-auto">
+<p class="col-md-10 rounded text-bg-dark p-3 mx-auto my-5"><strong> Accessibility tip:</strong> Using color to add meaning only provides a visual
+     indication, which will not be conveyed to users of assistive technologies like screen readers. Please ensure the 
+     meaning is obvious from the content itself (e.g., the visible text with a sufficient color contrast) or is included 
+     through alternative means, such as additional text hidden with the .visually-hidden class.</p>
+    </div></div
+<h3>with components</h3>
+
+<p>Use them in place of combined .text-* and .bg-* classes, like on badges:</p>
+
+<!--example of code-->
+
+<span class="badge text-bg-primary">Primary</span>
+<span class="badge text-bg-info">Info</span>
+
+<!--end of example-->
+<p>on cars</p>
+<!--example on cards-->
+<div class="row">
+<div class="card text-bg-primary mb-3 col-md-6 mx-auto" style="max-width: 18rem;">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
+  <div class="card text-bg-info mb-3 col-md-6 mx-auto" style="max-width: 18rem;">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+</div>
+
+<!--end example code-->
+
+<h1 class="text-center">colored links</h1>
+
+<h3>link colors</h3>
+
+<p>You can use the .link-* classes to colorize links. Unlike the .text-* classes, these classes have a :hover and :focus state.
+     Some of the link styles use a relatively light foreground color, and should only be used on a dark background in order
+      to have sufficient contrast.</p>
+<div class="row">
+  <div class="col-md-6 col-lg-4">
+  <p class="col-md-8 mx-auto rounded text-bg-dark p-3"><strong> Heads up!</strong> .link-body-emphasis is currently the only colored link that adapts
+     to color modes. It’s treated as a special case until v6 arrives and we can more thoroughly rebuild our theme colors for 
+     color modes. Until then, it’s a unique, high-contrast link color with custom :hover and :focus styles. However,
+      it still responds to the new link utilities.</p>
+    </div>
+<!--example of code-->
+<div class="col-md-6 col-lg-4">
+  <div class="text-bg-light p-3 col-md-8 mx-auto">
+<p><a href="#" class="link-primary">Primary link</a></p>
+<p><a href="#" class="link-secondary">Secondary link</a></p>
+<p><a href="#" class="link-success">Success link</a></p>
+<p><a href="#" class="link-danger">Danger link</a></p>
+<p><a href="#" class="link-warning">Warning link</a></p>
+<p><a href="#" class="link-info">Info link</a></p>
+<p><a href="#" class="link-light">Light link</a></p>
+<p><a href="#" class="link-dark">Dark link</a></p>
+<p><a href="#" class="link-body-emphasis">Emphasis link</a></p>
+</div></div>
+
+<!--end code example-->
+<div class="col-md-8 col-lg-4">
+<p class="col-md-8 mx-auto rounded text-bg-dark p-3 m-3"><strong> Accessibility tip:</strong> Using color to add meaning only provides a visual
+     indication, which will not be conveyed to users of assistive technologies like screen readers. Please ensure the meaning 
+     is obvious from the content itself (e.g., the visible text with a sufficient color contrast) or is included through 
+     alternative means, such as additional text hidden with the .visually-hidden class.</p>
+    </div>    </div>
+<h3>link utilities</h3>
+
+<p>Colored links can also be modified by our link utilities.</p>
+
+<!--example of code-->
+<div class="text-bg-light p-3 col-md-4 mx-auto">
+<p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Primary link</a></p>
+<p><a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary link</a></p>
+<p><a href="#" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success link</a></p>
+<p><a href="#" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Danger link</a></p>
+<p><a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Warning link</a></p>
+<p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Info link</a></p>
+<p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Light link</a></p>
+<p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Dark link</a></p>
+<p><a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Emphasis link</a></p>
+    </div>
+<!--end of example-->
+
+<h1 class="text-center">Focus ring</h1>
+
+<p>The .focus-ring helper removes the default outline on :focus, replacing it with a box-shadow that can be more broadly customized.
+     The new shadow is made up of a series of CSS variables, inherited from the :root level, that can be modified for any element
+      or component.</p>
+
+<h4>example</h4>
+
+<p>Click directly on the link below to see the focus ring in action, or into the example below and then press 
+    <span class="text-bg-light px-1"> Tab</span>.</p>
+
+<!--example of code-->
+
+<a href="#" class="focus-ring py-1 px-2 text-decoration-none border rounded-2">
+    Custom focus ring
+  </a>
+<!--end of example-->
+
+<h3>customize</h3>
+
+<p>Modify the styling of a focus ring with our CSS variables, Sass variables, utilities, or custom styles.</p>
+
+<h3>CSS variables</h3>
+
+<p>Modify the --bs-focus-ring-* CSS variables as needed to change the default appearance.</p>
+
+<!--example of code-->
+
+<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)">
+    Green focus ring
+  </a>
+
+  <!--end of example-->
+
+  <p>.focus-ring sets styles via global CSS variables that can be overridden on any parent element, as shown above. These variables
+     are generated from their Sass variable counterparts.</p>
+
+<p>By default, there is no --bs-focus-ring-x, --bs-focus-ring-y, or --bs-focus-ring-blur, but we
+     provide CSS variables with fallbacks to initial 0 values. Modify them to change the default 
+     appearance.</p>
+
+<!--example of code-->
+
+<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-x: 10px; --bs-focus-ring-y: 10px; --bs-focus-ring-blur: 4px">
+    Blurry offset focus ring
+  </a>
+
+  <!--end of example-->
+
+  <h3> Sass utilities API</h3>
+
+  <p>In addition to .focus-ring, we have several .focus-ring-* utilities to modify the helper class defaults. Modify the color with
+     any of our theme colors. Note that the light and dark variants may not be visible on all background colors given current color
+      mode support.</p>
+
+<!--example code-->
+<div class="text-bg-light p-3 col-md-4 mx-auto">
+<p><a href="#" class="d-inline-flex focus-ring focus-ring-primary py-1 px-2 text-decoration-none border rounded-2">Primary focus</a></p>
+<p><a href="#" class="d-inline-flex focus-ring focus-ring-secondary py-1 px-2 text-decoration-none border rounded-2">Secondary focus</a></p>
+<p><a href="#" class="d-inline-flex focus-ring focus-ring-success py-1 px-2 text-decoration-none border rounded-2">Success focus</a></p>
+<p><a href="#" class="d-inline-flex focus-ring focus-ring-danger py-1 px-2 text-decoration-none border rounded-2">Danger focus</a></p>
+<p><a href="#" class="d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2">Warning focus</a></p>
+<p><a href="#" class="d-inline-flex focus-ring focus-ring-info py-1 px-2 text-decoration-none border rounded-2">Info focus</a></p>
+<p><a href="#" class="d-inline-flex focus-ring focus-ring-light py-1 px-2 text-decoration-none border rounded-2">Light focus</a></p>
+<p><a href="#" class="d-inline-flex focus-ring focus-ring-dark py-1 px-2 text-decoration-none border rounded-2">Dark focus</a></p>
+</div>
+<!--end of example-->
+<p>Focus ring utilities are declared in our utilities API in scss/_utilities.scss. Learn how to use the utilities API.</p>
+
+<h1 class="text-center">icon link</h1>
+
+<p>The icon link helper component modifies our default link styles to enhance their appearance and quickly align any pairing
+     of icon and text. Alignment is set via inline flexbox styling and a default gap value. We stylize the underline with a custom
+      offset and color. Icons are automatically sized to 1em to best match their associated text’s font-size.
+
+    Icon links assume Bootstrap Icons are being used, but you can use any icon or image you like.</p>
+
+<p class="col-md-8 mx-auto rounded text-bg-dark p-3 m-3">When icons are purely decorative, they should be hidden from assistive
+   technologies using aria-hidden="true", as we’ve done in
+   our examples. For icons that convey meaning, provide an appropriate text alternative by adding role="img" and an appropriate 
+   aria-label="..." to the SVGs.</p>
+
+<h3>example</h3>
+
+<p>Take a regular <a> element, add .icon-link, and insert an icon on either the left or right of your link text.
+   The icon is automatically sized, placed, and colored.</p>
+
+<!--example of code-->
+
+<a class="icon-link" href="#">
+  <svg class="bi" aria-hidden="true"><use xlink:href="#box-seam"></use></svg>
+  Icon link
+</a>
+ <br>
+<!--example 2-->
+
+<a class="icon-link" href="#">
+  Icon link
+  <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+</a>
+<!--end example-->
+
+<h3>style on hover</h3>
+
+<p>Add .icon-link-hover to move the icon to the right on hover.</p>
+
+<!--example of code-->
+
+<a class="icon-link icon-link-hover" href="#">
+  Icon link
+  <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+</a>
+
+<!--end example-->
+
+<h3>customize</h3>
+
+<p>Modify the styling of an icon link with our link CSS variables, Sass variables, utilities, or custom styles.</p>
+
+
+<h3>CSS variables</h3>
+
+<p>Modify the --bs-link-* and --bs-icon-link-* CSS variables as needed to change the default appearance.
+
+  Customize the hover transform by overriding the --bs-icon-link-transform CSS variable:</p>
+
+<!--example of code-->
+
+<a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#">
+  <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+  Icon link
+</a>
+
+<p>Customize the color by overriding the --bs-link-* CSS variable:</p>
+
+<!--exmaple of code-->
+
+<a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">
+  Icon link
+  <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+</a>
+
+<h3>Sass variables</h3>
+
+<p>Customize the icon link Sass variables to modify all icon link styles across your Bootstrap-powered project.</p>
+
+$icon-link-gap:               .375rem;
+$icon-link-underline-offset:  .25em;
+$icon-link-icon-size:         1em;
+$icon-link-icon-transition:   .2s ease-in-out transform;
+$icon-link-icon-transform:    translate3d(.25em, 0, 0);
+
+<h3>Sass utilities API</h3>
+
+<p>Modify icon links with any of our link utilities for modifying underline color and offset.</p>
+
+<!--example of code-->
+
+<a class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-25" href="#">
+  Icon link
+  <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+</a>
+
+<!--end exmaple-->
+
+<h1 class="text-center">position</h1>
+
+<p>Use these helpers for quickly configuring the position of an element.</p>
+
+<h2>fixed top</h2>
+
+<p>Position an element at the top of the viewport, from edge to edge. Be sure you understand the ramifications of
+   fixed position in your project; you may need to add additional CSS</p>
+
+<!--example code-->
+
+&lt;div class="fixed-top"&gt;...&lt;/div&gt;
+
+
+<h3>fixed bottom</h3>
+
+<p>Position an element at the bottom of the viewport, from edge to edge. Be sure you understand the ramifications of
+   fixed position in your project; you may need to add additional CSS.</p>
+
+<!--example code-->
+
+&lt;div class="fixed-bottom"&gt;...&lt;/div&gt;
+
+<h3>sticky-top</h3>
+
+<p>Position an element at the top of the viewport, from edge to edge, but only after you scroll past it.</p>
+
+<!--example code-->
+
+&lt;div class="sticky-top"&gt;...&lt;/div&gt;
+
+<h3>Responsive sticky top </h3>
+
+<p>Responsive variations also exist for .sticky-top utility.</p>
+
+<!--example of code-->
+
+<div class="sticky-sm-top">Stick to the top on viewports sized SM (small) or wider</div>
+<div class="sticky-md-top">Stick to the top on viewports sized MD (medium) or wider</div>
+<div class="sticky-lg-top">Stick to the top on viewports sized LG (large) or wider</div>
+<div class="sticky-xl-top">Stick to the top on viewports sized XL (extra-large) or wider</div>
+<div class="sticky-xxl-top">Stick to the top on viewports sized XXL (extra-extra-large) or wider</div>
+
+<h3>sticky-bottom</h3>
+
+<p>Position an element at the bottom of the viewport, from edge to edge, but only after you scroll past it.</p>
+
+<!--example of code-->
+
+<div class="sticky-top">ishaq khan rind</div>
+
+<h3>Responsive-sticky-bottom</h3>
+
+<p>Responsive variations also exist for .sticky-bottom utility.</p>
+
+<!--example of code-->
+
+<div class="sticky-sm-bottom">Stick to the bottom on viewports sized SM (small) or wider</div>
+<div class="sticky-md-bottom">Stick to the bottom on viewports sized MD (medium) or wider</div>
+<div class="sticky-lg-bottom">Stick to the bottom on viewports sized LG (large) or wider</div>
+<div class="sticky-xl-bottom">Stick to the bottom on viewports sized XL (extra-large) or wider</div>
+<div class="sticky-xxl-bottom">Stick to the bottom on viewports sized XXL (extra-extra-large) or wider</div>
+
+
+<h1 class="text-center">ratio</h1>
+
+<p>Use the ratio helper to manage the aspect ratios of external content like &lt;iframe&gt;s, &lt;embed&gt;s, &lt;video&gt;s, and 
+  &lt;object&gt;s. These helpers also can be used on any standard HTML child element (e.g., a &lt;div&gt; or &lt;img&gt;).
+     Styles are applied from the parent .ratio class directly to the child.
+
+  Aspect ratios are declared in a Sass map and included in each class via CSS variable, which also allows custom aspect ratios.</p>
+
+<p class="col-md-8 mx-auto p-3 text-bg-dark rounded"><strong> Pro-Tip!</strong> You don’t need frameborder="0" on your &lt;iframe&gt;s as we override
+   that for you in Reboot.</p>
+
+<h3>example</h3>
+
+<p>Wrap any embed, like an &lt;iframe&gt;, in a parent element with .ratio and an aspect ratio class. The immediate child element
+   is automatically sized thanks to our universal selector .ratio &gt; *.</p>
+
+<!--example of code-->
+
+<div  class="p-3 m-0 border-0 bd-example m-0 border-0">
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+</div></div>
+
+<!--example of code end-->
+
+<h3>aspect ratio</h3>
+
+<p>Aspect ratios can be customized with modifier classes. By default the following ratio classes are provided:</p>
+
+<!--example of code-->
+<div class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-ratios">
+<div class="ratio ratio-1x1">
+  <div>1x1</div>
+</div>
+<div class="ratio ratio-4x3">
+  <div>4x3</div>
+</div>
+<div class="ratio ratio-16x9">
+  <div>16x9</div>
+</div>
+<div class="ratio ratio-21x9">
+  <div>21x9</div>
+</div>
+</div>
+<!--end of example-->
+
+
+<h3>custom ratio</h3>
+
+<p>Each .ratio-* class includes a CSS custom property (or CSS variable) in the selector. You can override this CSS variable
+   to create custom aspect ratios on the fly with some quick math on your part.
+
+  For example, to create a 2x1 aspect ratio, set --bs-aspect-ratio: 50% on the .ratio.</p>
+
+<!--exmaple of code-->
+<div  class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-ratios">
+  <div class="ratio" style="--bs-aspect-ratio: 50%;">
+    <div>2x1</div>
+  </div></div>
+<!--end of code-->
+
+<p>This CSS variable makes it easy to modify the aspect ratio across breakpoints. The following is 4x3 to start, but changes
+   to a custom 2x1 at the medium breakpoint.</p>
+
+<!--example of code-->
+<div class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-ratios">
+<div class="ratio ratio-4x3">
+  <div>4x3, then 2x1</div>
+</div></div>
+
+<h3>sass maps</h3>
+
+<p>Within _variables.scss, you can change the aspect ratios you want to use. Here’s our default $ratio-aspect-ratios map.
+   Modify the map as you like and recompile your Sass to put them to use.</p>
+
+<h1 class="text-center">Stacks</h1>
+
+<p>Stacks offer a shortcut for applying a number of flexbox properties to quickly and easily create layouts in Bootstrap.
+   All credit for the concept and implementation goes to the open source <a href="https://almonk.github.io/pylon/"> 
+    Pylon project</a>.</p>
+
+<p class="col-md-8 mx-auto p-3 rounded text-bg-dark"><strong> Heads up!</strong> Support for gap utilities with flexbox was recently
+   added to Safari, so consider verifying your intended browser support. Grid layout should have no issues. Read more.</p>
+
+<h3>vertical</h3>
+
+<p>Use .vstack to create vertical layouts. Stacked items are full-width by default. Use .gap-* utilities to add space
+   between items.</p>
+
+<!--example of code-->
+<div class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-flex">
+<div class="vstack gap-3">
+  <div class="p-2">First item</div>
+  <div class="p-2">Second item</div>
+  <div class="p-2">Third item</div>
+</div>
+</div>
+
+<h3>horizontal</h3>
+
+<p>Use .hstack for horizontal layouts. Stacked items are vertically centered by default and only take up their necessary
+   width. Use .gap-* utilities to add space between items.</p>
+
+<!--example of code-->
+<div class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-flex">
+<div class="hstack gap-3">
+  <div class="p-2">First item</div>
+  <div class="p-2">Second item</div>
+  <div class="p-2">Third item</div>
+</div></div>
+
+<p>Using horizontal margin utilities like .ms-auto as spacers:</p>
+
+<!--example 2-->
+<div class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-flex">
+<div class="hstack gap-3">
+  <div class="p-2">First item</div>
+  <div class="p-2 ms-auto">Second item</div>
+  <div class="p-2">Third item</div>
+</div></div>
+
+<p>And with vertical rules:</p>
+
+<!--example 3-->
+<div class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-flex">
+<div class="hstack gap-3">
+  <div class="p-2">First item</div>
+  <div class="p-2 ms-auto">Second item</div>
+  <div class="vr"></div>
+  <div class="p-2">Third item</div>
+</div></div>
+
+<h3>example</h3>
+
+<p>Use .vstack to stack buttons and other elements:</p>
+
+<!--example of code-->
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+<div class="vstack gap-2 col-md-5 mx-auto">
+  <button type="button" class="btn btn-success">Save changes</button>
+  <button type="button" class="btn btn-outline-success">Cancel</button>
+</div></div>
+
+<p>Create an inline form with .hstack:</p>
+
+<!--example 2-->
+
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+<div class="hstack gap-3">
+  <input class="form-control me-auto bg-info" type="text" placeholder="Add your item here..." aria-label="Add your item here...">
+  <button type="button" class="btn btn-primary">Submit</button>
+  <div class="vr"></div>
+  <button type="button" class="btn btn-outline-dark">Reset</button>
+</div>
+</div>
+
+<h1 class="text-center">streched link</h1>
+
+<p>Make any HTML element or Bootstrap component clickable by “stretching” a nested link via CSS.
+
+  Add .stretched-link to a link to make its containing block clickable via a ::after pseudo element. In most cases, this means
+   that an element with position: relative; that contains a link with the .stretched-link class is clickable. Please note given
+    how CSS position works, .stretched-link cannot be mixed with most table elements.
+  
+  Cards have position: relative by default in Bootstrap, so in this case you can safely add the .stretched-link class to a link
+   in the card without any other HTML changes.
+  
+  Multiple links and tap targets are not recommended with stretched links. However, some position and z-index styles can help 
+  should this be required.</p>
+
+<!--exmaple of code-->
+
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <div class="card" style="width: 18rem;">
+    <img class="bd-placeholder-img card-img-top" width="100%" height="180" src="../assest/slider img.jpg.jpg" 
+    aria-label="Card image cap" focusable="false"><title>Card image cap</title>
+    <rect width="100%" height="100%" fill="#868e96"></rect></img>
+    <div class="card-body">
+      <h5 class="card-title">Card with stretched link</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+    </div>
+  </div>
+  <!--end of example-->
+
+<p>Most custom components do not have position: relative by default, so we need to add the .position-relative here to prevent
+   the link from stretching outside the parent element.</p>
+
+<!--example of code-->
+
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <div class="d-flex position-relative">
+    <img width="400px" height="250px" src="../assest/slider img 3 .jpg.jpg" class="flex-shrink-0 me-3" alt="...">
+    <div>
+      <h5 class="mt-0">Custom component with stretched link</h5>
+      <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+      <a href="#" class="stretched-link">Go somewhere</a>
+    </div>
+  </div>
+</div>
+<!--end of code-->
+
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <div class="row g-0 bg-body-secondary position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="../assest/slider img.jpg.jpg" class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Columns with stretched link</h5>
+      <p style="color: black;">Another instance of placeholder content for this other custom component. It is intended to mimic
+        what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+      <a href="#" class="stretched-link">Go somewhere</a>
+    </div>
+  </div>
+</div>
+<!--end of code-->
+
+<h3>Identifying the containing block</h3>
+
+<p>If the stretched link doesn’t seem to work, the containing block will probably be the cause. The following CSS properties will
+   make an element the containing block:</p>
+
+<ul class=" unorderd-list"><li class="list-item">A position value other than static</li>
+<li class="list-item">A transform or perspective value other than none</li>
+<li class="list-item">A will-change value of transform or perspective</li>
+<li class="list-item">A filter value other than none or a will-change value of filter (only works on Firefox)</li></ul>
+
+<!--example of code-->
+
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <div class="card" style="width: 18rem;">
+    <img class="bd-placeholder-img card-img-top" width="100%" height="180" src="../assest/slider img.jpg" aria-label="Card image cap" focusable="false"><title>Card image cap</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
+    <div class="card-body">
+      <h5 class="card-title">Card with stretched links</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text">
+        <a href="#" class="stretched-link text-danger" style="position: relative;">Stretched link will not work here, because <code>position: relative</code> is added to the link</a>
+      </p>
+      <p class="card-text bg-body-tertiary" style="transform: rotate(0);">
+        This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.
+      </p>
+    </div>
+  </div>
+</div>
+
+<h1 class="text-center">Text truncation</h1>
+
+<p>Truncate long strings of text with an ellipsis.
+
+  For longer content, you can add a .text-truncate class to truncate the text with an ellipsis. Requires display: inline-block
+   or display: block.</p>
+
+<!-- Block level -->
+ <div class="p-3 m-0 border-0 bd-example m-0 border-0">
+<div class="row">
+  <div class="col-4 text-truncate">
+    This text is quite long, and will be truncated once displayed.
+  </div>
+</div>
+
+<!-- Inline level -->
+<span class="d-inline-block text-truncate" style="max-width: 250px;">
+  This text is quite long, and will be truncated once displayed.
+</span></div>
+
+<h1 class="text-center">vertical rule</h1>
+
+<p>Use the custom vertical rule helper to create vertical dividers like the &lt;hr&gt; element.</p>
+
+<h3>how it works</h3>
+
+<p>Vertical rules are inspired by the &lt;hr&gt; element, allowing you to create vertical dividers in common layouts. They’re
+   styled just like &lt;hr&gt; elements:</p>
+
+<ul><li>They’re 1px wide</li>
+<li>They have min-height of 1em</li>
+<li>Their color is set via currentColor and opacity</li></ul>
+<p>Customize them with additional styles as needed.</p> 
+
+<!--example of code-->
+<div class="p-3 m-0 border-0 bd-example m-0 border-0 text-bg-light">
+<div class="vr"></div></div>
+
+<div class="d-flex" style="height: 200px;">
+  <div class="vr"> good morning</div>
+</div>
+
+<h3>With stacks </h3>
+
+<p>They can also be used in stacks:</p>
+
+<!--example of code-->
+
+<div class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-flex">
+<div class="hstack gap-3">
+  <div class="p-2">First item</div>
+  <div class="p-2 ms-auto">Second item</div>
+  <div class="vr"></div>
+  <div class="p-2">Third item</div>
+</div></div>
+
+<h1>visually-hidden</h1>
+
+<p>Visually hide an element while still allowing it to be exposed to assistive technologies (such as screen readers) with
+   .visually-hidden. Use .visually-hidden-focusable to visually hide an element by default, but to display it when it’s 
+   focused (e.g. by a keyboard-only user). .visually-hidden-focusable can also be applied to a container–thanks to :focus-within,
+    the container will be displayed when any child element of the container receives focus.</p>
+
+<!--example of code-->
+
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+<h2 class="visually-hidden">Title for screen readers</h2>
+<a class="visually-hidden-focusable" href="../Bootstrap/index.html">Skip to main content</a>
+<div class="visually-hidden-focusable">A container with a <a href="../Border Outline Opacity/index.html">focusable element</a>.</div></div>
+
+<!--end of code-->
+
+
+
+</div>
+</body>
+</html>

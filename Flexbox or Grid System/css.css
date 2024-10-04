@@ -1,0 +1,40 @@
+.black-05{font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: normal;
+color:rgba(255, 255, 255, 0.8);
+background-color:rgba( 0, 0, 0, 0.5);}
+.deep-pink{color:white;
+text-shadow: 2px 3px red;}
+.h2{color:white;border: 2px;
+width: 700px;
+margin: 20px 30px 20px 80px;
+text-transform: capitalize;
+text-shadow: 2px 3px red;}
+.flexbox{border: 2px;
+display: flex;
+flex-direction: row;}
+.paragraph{border-radius: 20px;
+color: blue;
+width: 730px;
+margin: 20px 80px 20px 80px;
+padding: 20px 20px;}
+.example{border-radius: 20px;
+    font-size: xx-large;
+color:white;
+text-transform: capitalize;
+width: 150px;
+margin: 50px 20px 130px 20px}
+.h2flex{border: 2px solid deeppink;}
+.flexbox2{border-radius: 20px;
+display: flex;
+flex: row;
+flex-wrap:nowrap;}
+.p2{border-radius: 20px;
+color:blue;font-size: larger;
+width: 450px;
+margin: 30px 100px 30px 100px}
+.ul{border-radius: 20px;
+color:blue;
+text-transform: capitalize;
+width: 220px;
+margin:35px 20px 30px 20px;
+padding:20px 20px 20px 30px;}

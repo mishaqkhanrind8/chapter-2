@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>list group</title>
+    <script src="./bootstrap.bundle.min.js"></script>
+<style>body{background:rgba( 0, 0, 244, 0.3); font-family: Georgia, 'Times New Roman', Times, serif;
+word-spacing: 2px; letter-spacing: normal;}
+h1,h2,h3{color: blue; text-transform: capitalize;} </style>  
+</head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+<h1 class="text-center">list group</h1>
+<p>list group are a flexible and powerfull component for displaying a series of content. <br>
+modify and extend them to support just about any content within.</p>
+    <!-- list group -->
+    <h4>basic example</h4>
+        
+    <ul class="list-group">
+      <li class="list-group-item">An item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">And a fifth one</li>
+    </ul>
+
+    <hr>
+<!--active items-->
+<h4>active itme example</h4>
+
+<ul class="list-group">
+    <li class="list-group-item active" aria-current="true">An active item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item active">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+  </ul>
+
+<hr>
+<!--disabled items-->
+<h4>disabled items</h4>
+
+<ul class="list-group">
+    <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+  </ul>
+
+<hr>
+<!--links and buttons-->
+<h4>links and buttons</h4>
+
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+      The current link item
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+    <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+    <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+    <a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+  </div>
+
+<hr>
+<!--flush-->
+<h4>flush</h4>
+
+<ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+  </ul>
+
+<hr>
+<!--numbered-->
+<h4>numbered</h4>
+
+<ol class="list-group list-group-numbered">
+    <li class="list-group-item">A list item</li>
+    <li class="list-group-item">A list item</li>
+    <li class="list-group-item">A list item</li>
+  </ol>
+
+  <!--example 2-->
+  <h4>2nd example</h4>
+
+  <ol class="list-group list-group-numbered">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Subheading</div>
+        Content for list item
+      </div>
+      <span class="badge text-bg-primary rounded-pill">14</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Subheading</div>
+        Content for list item
+      </div>
+      <span class="badge text-bg-primary rounded-pill">14</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Subheading</div>
+        Content for list item
+      </div>
+      <span class="badge text-bg-primary rounded-pill">14</span>
+    </li>
+  </ol>
+
+<hr>
+<!--horizontal-->
+<h4>horizontal</h4>
+
+<ul class="list-group list-group-horizontal">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <ul class="list-group list-group-horizontal-sm">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <ul class="list-group list-group-horizontal-md">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <ul class="list-group list-group-horizontal-lg">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <ul class="list-group list-group-horizontal-xl">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <ul class="list-group list-group-horizontal-xxl">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+
+<hr>
+<!--variants-->
+<h4>variant</h4>
+
+<ul class="list-group">
+    <li class="list-group-item">A simple default list group item</li>
+  
+    <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+    <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+    <li class="list-group-item list-group-item-success">A simple success list group item</li>
+    <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+    <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+    <li class="list-group-item list-group-item-info">A simple info list group item</li>
+    <li class="list-group-item list-group-item-light">A simple light list group item</li>
+    <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+  </ul>
+
+<hr>
+<!--variant for links and buttons-->
+<h4>links and button variants</h4>
+
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+  
+    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+  </div>
+
+<hr>
+<!--widht badges-->
+<h4>badges</h4>
+
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      A list item
+      <span class="badge text-bg-primary rounded-pill">14</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      A second list item
+      <span class="badge text-bg-primary rounded-pill">2</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      A third list item
+      <span class="badge text-bg-primary rounded-pill">1</span>
+    </li>
+  </ul>
+
+<hr>
+<!--custom content-->
+<h2>custom content</h2>
+
+<p>add nearly any HTML within, even for linked list groups like the one below, with the help of
+   flexbox utilities</p>
+
+   <h4>example</h4>
+
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">List group item heading</h5>
+        <small>3 days ago</small>
+      </div>
+      <p class="mb-1">Some placeholder content in a paragraph.</p>
+      <small>And some small print.</small>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">List group item heading</h5>
+        <small class="text-body-secondary">5 days ago</small>
+      </div>
+      <p class="mb-1">Some placeholder content in a paragraph.</p>
+      <small class="text-body-secondary">And some muted small print.</small>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">List group item heading</h5>
+        <small class="text-body-secondary">1 week ago</small>
+      </div>
+      <p class="mb-1">Some placeholder content in a paragraph.</p>
+      <small class="text-body-secondary">And some muted small print.</small>
+    </a>
+  </div>
+
+<hr>
+<!--checkboxes and radios-->
+<h2>list groups</h2>
+
+<h3>checkboxes and radios</h3>
+
+<p>place bootstrap's checkboxes and radios within list group items and customize as needed. <br>
+you can use them without &lt;label&gt;. but please remember to include an aria-label attribute and 
+value for accessibility.</p>
+
+<h4>checkboxes</h4>
+
+<ul class="list-group">
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+      <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+      <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+      <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+    </li>
+  </ul>
+
+<h4>radios</h4>
+
+<ul class="list-group">
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+      <label class="form-check-label" for="firstRadio">First radio</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+      <label class="form-check-label" for="secondRadio">Second radio</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+      <label class="form-check-label" for="thirdRadio">Third radio</label>
+    </li>
+  </ul>
+
+  <hr>
+  <!--streched link-->
+  <h4>streched links</h4>
+
+  <ul class="list-group">
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+      <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+      <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>
+    </li>
+    <li class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+      <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
+    </li>
+  </ul>
+
+<hr>
+<!--modal-->
+
+<h1 class="text-center">modal</h1>
+
+<p>use bootstrap's JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications. 
+  or completely custom content.
+</p>
+
+<h3>how it works</h3>
+<p>before getting started with bootstrap's modal component, be sure to read the following as our nenu options 
+  have recently changed. <br>
+  modals are built with HTML, CSS and JavaScript. they are positioned over everything else in the document and 
+  remove scroll from the &lt;body&gt; so that modal content scrolls instend. <br>
+  clicking on the modal "backdrop" will automatically close the modal. <br>
+  bootstrap only supports one modal window at a time. nested modals aren't supported as we believe them to be 
+  poor user experiences.
+</p>
+<h3>example</h3>
+<h5>model components</h5>
+<p>below is a static modal example (meaing its position and display have been overriden) included are the modal 
+  header, modal body (required for padding). and modal footer (optional). we ask that your include modal headers with 
+dissmiss actions wherever possible. ro provide another explicit dismiss action. </p>
+<a class="btn btn-primary" href="./model.html">example here</a>
+
+<!--modal popup-->
+<strong> live demu</strong>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        this is a modal basic exmaple
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<h3>static backdrop</h3>
+<!--static backdrop-->
+<p>when backdrop is set to static. the model will not close when clicking outside of it.</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        click understood button or close button
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+      <hr><h3>scrolling long content</h3>
+<p>when modals become too long for the user's viewport or device. they scroll independent of the page 
+  itself. try demo below to see what we mean. <br>
+  you can also create a scrollable modal that allows scroll the modal body by adding modal-dialog-scrollable 
+  to modal-dialog.
+</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exa">
+        Launch demo modal
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">    This is some placeholder content to show the scrolling behavior for
+                 modals. We use repeated line breaks to demonstrate how content can exceed minimum inner
+                  height, thereby showing inner scrolling. When content becomes longer than the predefined 
+                  max-height of modal, content will be cropped and scrollable within the modal.
+                 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> 
+                 This content should appear at the bottom after you scroll.</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <strong> scrolling modal body</strong>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ex">
+        Launch demo modal
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="ex" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">    This is some placeholder content to show the scrolling behavior for
+                 modals. We use repeated line breaks to demonstrate how content can exceed minimum inner
+                  height, thereby showing inner scrolling. When content becomes longer than the predefined 
+                  max-height of modal, content will be cropped and scrollable within the modal.
+                 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> 
+                 This content should appear at the bottom after you scroll.</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<hr>
+      <h3>tooltips and popovers</h3>
+      <p>tooltips and popovers can be placed within modals as needed, when modals are closed any tooltips and popovers 
+        within are also automatically dismissed.
+      </p>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exam">
+        Launch demo modal
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exam" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h2 class="fs-5">Popover in a modal</h2>
+              <p>This <button class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute.">button</button> triggers a popover on click.</p>
+              <hr>
+              <h2 class="fs-5">Tooltips in a modal</h2>
+              <p><a href="#" data-bs-toggle="tooltip" title="Tooltip">This link</a> and <a href="#" data-bs-toggle="tooltip" title="Tooltip">that link</a> have tooltips on hover.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <hr>
+      <h4>vertically centered</h4>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#examp">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="examp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        This is a vertically centered modal.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h4>vertically centered</h4>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampl">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        This is some placeholder content to show a vertically centered modal. We've added some extra copy
+         here to show how vertically centering the modal works when combined with scrollable modals. We
+         also use some repeated line breaks to quickly extend the height of the content, thereby 
+         triggering the scrolling. When content becomes longer than the predefined max-height of modal,
+          content will be cropped and scrollable within the modal.
+        This is a vertically centered modal. <br><br><br><br><br><br><br><br><br>good bye
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<!--using the grid-->
+<h3>using the grid</h3>
+<p>utilize the bootstrap grid system within a modal by nesting <span class="orange">.container-fluid</span> 
+within the <span class="orange">.modal-body.</span><br>
+then, use the normal grid system classes as you would anywhere else.</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="example" tabindex="-1" aria-labelledby="example" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4">.col-md-4 (go to lahore at 10:01pm) </div>
+            <div class="col-md-4 ms-auto">.col-md-4 .ms-auto (go to karachi at 11:00 pm) </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+            <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-9">
+              Level 1: .col-sm-9
+              <div class="row">
+                <div class="col-8 col-sm-6">
+                  Level 2: .col-8 .col-sm-6
+                </div>
+                <div class="col-4 col-sm-6">
+                  Level 2: .col-4 .col-sm-6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<!--varying model content-->
+<h3>varying model content</h3>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleM" data-bs-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleM" data-bs-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleM" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleM" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<!--toggle between modals-->
+<h3>toggle between modals</h3>
+<p>toggle between multiple modals with some clever placement of the data-bs-target and data-bs-toggle attribute <br>
+for example you could toggle a passowrd reset modal from within an already open sign in modal. 
+please note multiple modals cannot be open at the same-time  this method simply toggles between two separate modals.
+</p>
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Show a second modal and hide this one with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
+<hr>
+<h3>remove animation</h3>
+<p>for modals that simply appear rather than fade in to view. <br>
+remove the fade class form yur modal markup.</p>
+<hr>
+<!--optional sizes-->
+<h3>optional sizes</h3>
+<p>modals have three optional sizes avaiable via modifier classes to be placed on a modal-dialog. these sizes kick in 
+  at cretain breakpoints to avoid horizontal scrollbars on narrower viewports.
+</p>
+<div class="row">
+  <div class="col-md-8 mx-auto">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">size</th>
+      <th scope="col">class</th>
+      <th scope="col">modal max-width</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>small</td>
+      <td>.modal-sm</td>
+      <td>300px</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>default</td>
+      <td>none</td>
+      <td>500px</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>large</td>
+      <td>.modal-lg</td>
+      <td>800px</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>extra large</td>
+      <td>.modal-xl</td>
+      <td>1140px</td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+
+<p>our default modal without modifier class constitutes the "medium" size modal. </p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleMo">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleMo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--lg-->
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleMod">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleMod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--sm-->
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleMode">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleMode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>full screen modal</h3>
+<div class="row"><div class="col-md-6 my-3"><p>another override is the option to pop up a modal that covers the user viewport. available via modifier classes 
+  that are placed on a <span class="orange">.modal-dialog.</span>
+</p></div>
+<div class="col-md-6">
+<table class="table">
+  <thead>
+    <tr>
+     
+      <th scope="col">class</th>
+      <th scope="col">availability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+     
+      <td>.modal-fullscreen</td>
+      <td>always</td>
+    </tr>
+    <tr>
+    
+      <tr>
+     
+        <td>.modal-fullscreen-sm-down</td>
+        <td>576px</td>
+      </tr>
+      <tr>
+
+        <tr>
+     
+          <td>.modal-fullscreen-md-down</td>
+          <td>768px</td>
+        </tr>
+        <tr>
+
+          <tr>
+     
+            <td>.modal-fullscreen-lg-down</td>
+            <td>992px</td>
+          </tr>
+          <tr>
+
+      <td>.modal-fullscreen-xl-down</td>
+      <td>1200px</td>
+    </tr>
+    <tr>
+
+      <td >.modal-fullscreen-xxl-down</td>
+      <td>1400px</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleMode1">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleMode1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        This is some placeholder content to show a vertically centered modal. We've added some extra copy
+        here to show how vertically centering the modal works when combined with scrollable modals. We
+        also use some repeated line breaks to quickly extend the height of the content, thereby 
+        triggering the scrolling. When content becomes longer than the predefined max-height of modal,
+         content will be cropped and scrollable within the modal.
+       This is a vertically centered modal. 
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>good bye
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+      </body></html>

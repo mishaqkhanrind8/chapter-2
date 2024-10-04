@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!--cdn of bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+
+    <link href="../../bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../bootstrap/bootstrap-5.3.3-dist/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="../../bootstrap/bootstrap-5.3.3-dist/css/bootstrap-utilities.min.css">
+    <script src="./bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../HTML/Contect Us.html">developer</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./login.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <form action="" class="rounded bg-secondary row g-3 ms-5 me-5 my-5">
+        <legend class="display-5 text-center">Fill Form below for sign in</legend>
+        <div class="col-md-6">
+          <label for="inputemail4" class="form-label">email</label>
+          <input type="email" class="form-control" id="inputemail4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputpaswword4" class="form-label">password</label>
+          <input type="password" class="form-control" id="inputpassword4" required>
+        </div>
+      <div class="col-12">
+        <label for="inputaddress" class="form-label">address</label>
+        <input type="text" class="form-control" id="inputaddress" placeholder="1234 main st">
+      </div>
+      <div class="col-12">
+        <label for="inputaddress" class="form-label">address 2</label>
+        <input type="text" class="form-control" id="inputaddress" placeholder="1234 main st">
+      </div>
+      <div class="col-md-6">
+      <label for="inputcity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputcity">  
+      </div>
+      <div class="col-md-4">
+        <label for="iputstate" class="form-label">state</label>
+        <select id="inputstate">
+          <option selected>choose...</option>
+          <option value="1">pakistan</option>
+          <option value="2">india</option>
+          <option value="3">united states</option>
+          <option value="4">UAE</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputzip" class="form-label">zip</label>
+        <input type="text" class="form-control" id="inputzid">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="gridcheck" required>
+          <label for="gridcheck" class="form-check-label">i have read the agreement and terms of policies</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-success">sign in</button>
+      </div>
+      </form>
+</body>
+</html>

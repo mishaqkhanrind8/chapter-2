@@ -1,0 +1,12 @@
+body{color: black;
+background-image:url(../HTML/assest/rgb\ theme.jpg);
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: normal;
+font-style: italic;}
+h1{text-transform: capitalize;
+color: deeppink;}
+h2{color: blue;
+text-transform: capitalize;}
+h3{color:green;
+text-transform: capitalize;}
+.larger{font-size: x-large; text-transform: capitalize;}

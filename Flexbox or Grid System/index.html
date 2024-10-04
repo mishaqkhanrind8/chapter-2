@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box and grid system</title>
+    <!--cdn of bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"/>
+    <link href="../../Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
+   <link href="../../Bootstrap/bootstrap-5.3.3-examples/navbar-fixed/navbar-fixed.css"/>
+<link rel="stylesheet" href="./css.css">
+<style>
+   .white-07{color: rgba(255, 255, 255, 0.9);}
+</style>
+<script src="./bootstrap.bundle.min.js"></script>  </head>
+</head>
+<body>
+    <div class="container-fluid black-05">
+<nav class="navbar navbar-dark sticky-top navbar-expand-md bg-dark">
+    <div class="container-fluid">
+<strong class="navbar-brand h1">Flex Boxes and Grid System</strong>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+<li class="nav-item"><a class="nav-link" href="../E-Commerce Store/index.html">Visit on My Webpage</a></li></ul>
+ <form class="d-flex" role="search">
+    <input  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form></div></nav>
+<h1 class="deep-pink text-center">flex box</h1>
+<h3 class="h2">flex container</h3>
+<div class="row"><p class="col-md-6">to start using the flexbox model, you need to first define a flex container.<br>
+the flex container becomes flexible by setting the display property to flex.</p>
+<h4 class="col-md-2">exmaple:</h4>
+<p class="col-md-4">.flex-container{display:flex;<br>
+flex:row}
+</p></div>
+<h3 class="h2">flex container properties</h3>
+<div class="row"><p class="col-md-6 mx-auto">the flex container properties are:
+<ul class="col-md-4 mx-auto"><li>flex-direction</li><br>
+<li>flex-warp</li><br>
+<li>flex-flow</li><br>
+<li>justify-content</li><br>
+<li>align-items</li><br>
+<li>align-content</li></ul></p></div>
+<h2 class="h2">the flex-direction property</h2>
+<Div class="row"><p class="col-md-6">the flex-direction property defines in which direction the container wants to stack the flex items.<br>
+the possible values are row (defaul). row-revrese, column and column-reverse</p>
+<h3 class="col-md-2">example:</h3>
+<p class="col-md-4">flex-containter{display:flex;<Br>
+ flex-direction:column}<br>
+.flex-container{display:flex;<br>
+flex-direction:row} </p></Div>
+<h2 class="h2">the flex-wrap property</h2>
+<Div class="row"><p class="col-md-6">the flex-wrap property specifies whether the flex items should wrap ro not.<br>
+the possible values are nowrap(default).wrap, and wrap-reverse</p>
+<h3 class="col-md-2">example:</h3>
+<p class="col-md-4">.flex-container{display:flex;<br>
+flex-wrap:wrap}</p></Div>
+<h2 class="h2">the flex-flow property</h2>
+<Div class="row"><p class="col-md-6">the flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.</p>
+<h3 class="col-md-2">exmaple:</h3>
+<p class="col-md-4">.flex-container{display:flex;flex-flow:row wrap;} </p></Div>
+<h2 class="h2">the justify-content property</h2>
+<Div class="row"><p class="col-md-6">the justify-content property is used to align the flex items along the main axis.<br>
+the possible values are flex-start(defaul).flex-end ,center space between. space around. and space evenly. </p>
+<h3 class="col-md-2">example:</h3>
+<p class="col-md-4">the center value aligns the flex items at the center of te container:<br>
+.flex-container{display:flex;<br>
+justify-content: center;} </p></Div>
+<h2 class="h2">the align-items property</h2>
+<Div class="row"><p class="col-md-6">the align-items property is used to align the flex items along the cross axis.<br>
+the possible values are stretch(default),flex-start,flex end,center and baseline. </p>
+<h3 class="col-md-2">example:</h3>
+<p class="col-md-4">.flex-container{display:flex;<br>
+height:200px;align-items:center;} </p></Div>
+<h2 class="h2">the align-content property</h2>
+<div class="row"><p class="col-md-6">the align-content property is used to align the flex lines.<br>
+the possible values are stretch(default),flex-start,flex-end,center,space-between,space-around and space evenly.</p>
+<h3 class="col-md-2">example:</h3>
+<p class="col-md-4">.flex-container{display:flex;<br>
+height:600px;<br>
+flex-wrap:wrap;<br>
+align-content:space-between;} </p></div>
+<h2 class="h2">child elements (items)</h2>
+<div class="row"><p class="col-md-6 mx-auto">the direct child elements of a flex container automatically becomes flexible (flex) items.<br>
+the flex item properties are: </p>
+<ul class="col-md-4 mx-auto"><li>order</li><br>
+<li>flex-grow</li><br>
+<li>flex-shrink</li><br>
+<li>flex-basis</li><br>
+<li>flex</li><br>
+<li>align-self</li><br></ul></div>
+<h2 class="h2">the order property</h2>
+<div class="row"><p class="col-md-6">the order property specifies the order of the flex items.<br>
+the first flex item in the code does not have to appear as the first item in the layout.<br>
+the order value must be a number, default value is .0.</p>
+<h3 class="col-md-2">example:</h3>
+<p class="col-md-4">the order property can change the order of the flex items:<br>
+&lt;div class="flex-container"&gt;<br>
+&lt;div style="order: 3"&gt;1&lt;./div&gt;<br>
+&lt;div style-"order:2"&gt;2&lt;/div&gt;<br>
+&lt;div style="order:1"&gt;3&lt;/div&gt;&lt;/div&gt;</p></div>
+<h2 class="h2">the flex-grow property</h2>
+<div class="row"><p class="col-md-6">the flex-grow property specifies how much a flex item will grow reactive to the rest of the flex itmes.<br>
+the value must be a number, default value is .0.</p>
+<h3 class="col-md-2">example:</h3>
+<p class="col-md-4">make the third flex item grow eight times faster than the other flex items:<br>
+&lt;div class="flex-container"&gt;<br>
+&lt;div style="flex-grow: 1"&gt;1&lt;/div&gt;<br>
+&lt;div style-"flex-grow:1"&gt;2&lt;/div&gt;<br>
+&lt;div style="flex-grow:8"&gt;3&lt;/div&gt;&lt;/div&gt;</p></div>
+<h2 class="h2">the flex-shrink property</h2>
+<div class="row"><p class="col-md-6">the flex-shrink poperty specifies how much a flex item will shrink relative to the rest of the flex items.<br>
+the value must be a number. default value is 1.</p>
+<h3 class="col-md-2">example:</h3>
+<p class="col-md-4">don't let the third flex item shrink as much as the other flex items:<br>
+&lt;div class="flex-container"&gt;<br>
+&lt;div&gt;1&lt;/div&gt;<br>
+&lt;div&gt;2&lt;/div&gt;<br>
+&lt;div style="flex-shrink:0"&gt;3&lt;/div&gt;&lt;/div&gt;</p></div>
+<h2 class="h2">the flex-basis property</h2>
+<div class="row"><p class="col-md-6">the flex-basis property specifies the intial length of a flex item.</p>
+<h3 class="col-md-2">example:</h3>
+<p class="col-md-4">set the initial length of the third flex item to 200 pixels:<br>
+&lt;div class="flex-container"&gt;<br>
+&lt;div&gt;1&lt;/div&gt;<br>
+&lt;div&gt;2&lt;/div&gt;<br>
+&lt;div style="flex-basis: 200px"&gt;3&lt;/div&gt;<br>
+&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;</p></div>
+<h2 class="h2">the flex property</h2>
+<div class="row"><p class="col-md-6">the flex property is a shorthand property for the flex-grow flex-shrink and flex-basis properties</p>
+<h3 class="col-md-2">example:</h3>
+<p class="col-md-4">make the third flex item not gorwable (0). not shrinkable (0). and with an initial length of 200pixels:<br>
+&lt;div class="flex-container"&gt;<br>
+&lt;div&gt;1&lt;/div&gt;<br>
+&lt;div&gt;2&lt;/div&gt;<br>
+&lt;div style="flex:00 200px"&gt;3&lt;/div&gt;<br>
+&lt;div&gt;4&lt;/div&gt;&lt;/div&gt;</p></div>
+<h2 class="h2">the align-self property</h2>
+<div class="row"><p class="col-md-6">the align-self property specifies the alingment for the selected item inside the flexible container.<br>
+the align-self property overrides the default alignment set by the container's align-items property.</p>
+<h3 class="col-md-2">example:</h3>
+<p class="col-md-4">align the third flex item in the middle of the container:<br>
+&lt;div class= "flex-container"&gt;<br>
+&lt;div&gt;1&lt;/div&gt;<br>
+&lt;div&gt;2&lt;/div&gt;<br>
+&Lt;div style="align-self:center"&gt;3&lt;/div&gt;&lt;/div&gt; </p></div>
+</div>
+</body></html>

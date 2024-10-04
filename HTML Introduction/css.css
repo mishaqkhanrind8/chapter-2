@@ -1,0 +1,11 @@
+body{font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: normal;
+color:blue;
+background-image: url(../HTML/assest/rgb\ theme.jpg);
+word-spacing: 1px;
+letter-spacing: 1px;}
+h1{color: deeppink;
+text-transform: capitalize;
+text-shadow: 2px 2px blue;}
+.i{font-family: 'Courier New', Courier, monospace;
+font-style: normal;}

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML5 Video & Audio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+<link href="../../Bootstrap/bootstrap-5.3.3-dist/css/bootstrap-grid.css" rel="stylesheet">
+<link href="../../Bootstrap/bootstrap-5.3.3-examples/navbar-fixed/navbar-fixed.css">
+<link href="../../Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+<style>
+body{background-color: lightblue;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+h1{color: red;}
+h2{color: deeppink;}
+h3{color: blue;}
+.vid{border-radius: 10px;
+margin: 4px 4px;}</style>
+
+<script src="./bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+      <div class="container-fluid">
+        <strong class="navbar-brand">HTML Multimedia</strong>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Contact Us/index.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../FAQs/index.html" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../HTML Multimedia/index.html">My Videos</a></li>
+                <li><a class="dropdown-item" href="../Css Text/index.html">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../CSS Complete Course/index.html">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Khan Jee 786</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" action="../E-Commerce Store/index.html">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+<h1 class="text-center">Html Multimedia</h1>
+<p>multimedia on the web is sound, music, videos, movies and animations.</p>
+<h2>what is multimedia?</h2>
+<p>multimedia comes in many different formates it can be almost anything you can hear 
+or see, ilke images, music, sound, videos, records, films, animations, and more.<br>
+web pages often contain multimedia elements of different types and formates.</p>
+<h2>browser support:</h2>
+<p >the first web browsers had support for text only,<br>
+limited to a single font in a single color.<br>
+later came browsers with support for colors, fonts, images, and multimedia</p>
+<h2>multimedia formats:</h2>
+<p>multimedia elements (like audio or video) are stored in media files.<br>
+the most common way to discover the type of a file. is to look at the file extension.<br>
+multimedia files have formates and different extensions like: wav, mp3, mp4. mpg, wmv and avi</p>
+<h1>the HTML &lt;Vidoe&gt; element</h1>
+<div class="row">
+<p class="col-md-6">The HTML &lt;video&gt; element is used to show a video on a web page</p>
+<p class="col-md-6">to show a video in HTML use the &lt;video&gt; element;</p>
+<h3 class="col-md-4">Example</h3>
+<p class="col-md-8">&lt;video width="320" height="240" controls&gt;<br>
+&lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+&lt;source src="movie.ogg" type="video/ogg"&gt;<br>
+Your browser does not support the tag. &lt;/video&gt;</p></div>
+<h2>instructions for attributes:</h2>
+<p>the controls attribute adds video controls, like play pause, and volume.<br>
+it is a good idea to always include width and height attributes, if height and width are not set, 
+the page might flicker while the video loads,,<br>
+the &lt;source&gt; element allows you to specify alternative video files
+which the browser may choose from the browser will use the first recognized format.<br>
+the text between the &lt;video&gt; and &lt;/video&gt; tags will only be displayed
+in browsers than do not support the &lt;video&gt; element.</p>
+
+<h2>HTML &lt;video&gt; Autoplay</h2>
+<p>To start a video automatically,use the autoplay attribute.<br><br>
+  Add muted after autoplay to let your video start playing automatically.but muted</p>
+<h3>Example</h3>
+<div class="row"><p>&lt;video width="320" height="240" autoplay muted&gt;</p>
+<video class="col-sm-6 col-md-3" controls autoplay muted title="html complete course"  frameborder="0">
+  <source src="../assest/HTML5.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="css complete course"  frameborder="0">
+  <source src="../assest/CSS+complete.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../html by smash code.mp4".mp4"/></video>
+<video class="col-sm-6 col-md-3" controls  frameborder="0">
+  <source src="../../../CSS Totorials/lec 01.mp4"></video>
+  <video class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../css Totorials/lec 02.mp4"></video>
+  <video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 03.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 05.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 06.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 07.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 08.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 09.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 10.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 11.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 12.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 13.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 14.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../CSS Totorials/lec 4.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../Bootstrap Tutorials/lec 01.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../Bootstrap Tutorials/lec 02.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../Bootstrap Tutorials/lec 03.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="boot strap by smash code"  frameborder="0">
+  <source src="../../../Bootstrap Tutorials/lec 04.mp4"/></video>
+<video  class="col-sm-6 col-md-3" controls title="html by smash code"  frameborder="0">
+  <source src="../../../html by smash code.mp4"/></video>
+</div>
+<div class="row">
+<iframe  class="col-sm-6 col-md-3 m-0" src="https://www.youtube.com/embed/B4NyTZ14Kyo" 
+title="kothe utte kothra pawa dy sohna dhol way Best old song collection,
+ Saraiki&#39;s new song 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+  encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe  class="col-sm-6 col-md-3 m-0" src="https://www.youtube.com/embed/DBH8CnL-qb8"
+ title="Travel to Multan Attaullah Khan Esakhelvi saraiki dohray mahiye 
+program hamin chod piya#tiktok viral" frameborder="0" allow="accelerometer; autoplay;
+ clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ <iframe  class="col-sm-6 col-md-3 m-0" src="https://www.youtube.com/embed/x_yDI-il6gg" 
+title="new funny tiktok virals #tiktokreels #top10  #tiktok viral video 
+#facebook funny" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+ gyroscope; picture-in-picture; web-share"
+ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ <iframe  class="col-sm-6 col-md-3 m-0" src="https://www.youtube.com/embed/pwyENliM8wE" 
+title="making bricks in village hard working duniya #matlabilog #funny
+ #shortsfor #shortsviral #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+  encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<h2>HTML Audio</h2>
+<div class="row">
+<p class="col-md-4">the html &lt;audio&gt; element is used to play an audio file on a web page.</p>
+<h3 class="col-md-4">The html &lt;audio&gt; element</h3>
+<p class="col-md-4">to play an audio file in html use the &lt;audio&gt; element</p>
+<h3 class="col-md-3" style="color: blue;">Example</h3>
+<p class="col-md-9">&lt;source src="horse.ogg" type="audio/ogg&gt; <br>
+&lt;source src="horse.mp3" type="audio/mpeg"&gt;<br>
+your browser does not support the audio element&lt;/audio&gt;</p>
+</div>
+<div class="row">
+<audio class="col-sm-6 col-md-4" controls><source src="../assest/abc (1).mp3" type="audio/mp3"></audio>
+<audio class="col-sm-6 col-md-4" controls autoplay><source src="../assest/abc (2).mp3" type="audio/mp3"></audio>
+<audio class="col-sm-6 col-md-4" controls><source src="../assest/ishaqkhan.mp3" type="audio/mp3"></audio>
+</div>
+<h2>HTML Audio- How it works</h2>
+<div class="row">
+<p class="col-md-8 mx-auto" style="background-color: cadetblue;">the controls attribute adds audio controls like play pause
+   and volume.<br><br>
+the &lt;source&gt; element allows you to specify altranative audio files which the browser may choose
+ form the 
+browser will use the first recognised format.<br><br>
+the text between the &lt;audio&gt; tags will only be displayed in browsers that do not support the
+&lt;audio&gt; element.</p>
+<h2 class="col-md-12">HTML Attributes,id and class diffrence</h2>
+<p class="col-md-5">html attributes provide addtional information about html elements.</p>
+<h3 class="col-md-3">HTML Attributes:</h3>
+<ul class="col-md-4"><li>All html elements can have attributes</li>
+<li>Attributes provide additional information about element.</li></ul>
+</div>
+<h2>The href and src Attribute</h2>
+<div class="row">
+<p class="col-md-5">the &lt;a&gt; tag defines a hyperlink.the href attribute specifies the URL of the page the link
+   goes to:</p>
+<h3 class="col-md-2">Example</h3>
+<p class="col-md-5">&lt;a href="https://beqabil.com/"&gt;visit beqabil.com&lt;/a&gt;</p>
+</div>
+<h3>The src Attribute</h3>
+<p style="background-color: aquamarine;">the &lt;img&gt; tag is used to set an image on html page.
+the src attribute is used to the image to be display in page.<br><br>
+Example:<br><br>&lt;img src="img_girl.jpg"&gt;</p>
+<div class="row">
+<img class="col-sm-6 col-md-4" height="400px" src="../assest/girl.jpg" alt="browser not supported"/>
+<img class="col-sm-6 col-md-4" height="400px" src="../assest/image2.jpg.jpg" alt="browser not supported"/>
+<img class="col-sm-6 col-md-4" height="400px" src="../assest/image3.jpg.jpg" alt="browser not supported"/>
+</div>
+<h1>IFrame Use </h1>
+<div class="row">
+  <iframe class="col-md-6" height="300px" src="../Fiverr gig example/index.html"
+ frameborder="0">Seo Copaign</iframe>
+<div class="col-md-6">
+<h2>The alt Attribute</h2>
+<p style="color: blue;">the required alt attribute for the &lt;img&gt; tag specifies an alternate
+   text for an
+image. if the image for some reason cannot be displayed.this can be due to a slow connection or 
+an error in
+the src attribute or if user uses a screen reader.</p>
+<h2>The style and title Attribute</h2>
+<p style="color:blue;"> the style attribute is used to add styles to an element.such as color font 
+  size and more</p>
+<h3>Example</h3>
+<p style="color: red;">&lt;p style="color;red;"&gt; this is a red paragaraph</p>
+</div></div>
+<div class="row">
+<h2>The title Attribute;</h2>
+<p class="col-md-5">the title attirbute defines information about an element</p>
+<h3 class="col-md-2" > Example</h3>
+<p class="col-md-5" title="m ishaq khan rind baloch">this paragraph is a title</p> 
+</div>
+<h2>The Lang Attribute</h2>
+<div class="row">
+<p class="col-md-5" style="color: blue;">you should always include the lang attribute inside the &lt;html&gt; 
+  tag.to declear 
+the language of the web page. this is meant to assist search engines and browsers.<br><br>
+the following example specifiesEnglish as the language.</p>
+<h3 class="col-md-2">Example</h3>
+<p class="col-md-5">&lt;!doctype html&gt;<br>
+&lt;html lagn="en"&gt;<br>
+&lt;body&gt;<br>....<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</p> 
+</div>
+<!--footer--><center><footer>&copy;All Right Reserved 2024</footer></center>
+</div>
+</body></html>
